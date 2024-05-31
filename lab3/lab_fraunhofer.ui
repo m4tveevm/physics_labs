@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Лабораторная работа: Дифракция Фраунгофера</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <layout class="QFormLayout" name="formLayout">
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_experiment_type">
+         <property name="text">
+          <string>Тип эксперимента:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QComboBox" name="experiment_type_combo">
+         <item>
+          <property name="text">
+           <string>Одиночная щель</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Одномерная решетка</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Двумерная решетка</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_angle">
+         <property name="text">
+          <string>Угол (градусы):</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="angle_input"/>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QPushButton" name="start_button">
+       <property name="text">
+        <string>Начать эксперимент</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QLabel" name="constants_label">
+     <property name="text">
+      <string>Постоянные значения установки:\nДлина волны λ = 650 нм\nРасстояние до экрана L = 200 см</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="result_label">
+     <property name="text">
+      <string>Результаты эксперимента будут отображены здесь</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="graph_widget" native="true">
+     <layout class="QVBoxLayout" name="graph_layout"/>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
