@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>648</width>
+    <height>403</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Лабораторная работа: Исследование эффекта Холла в полупроводниках</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <layout class="QFormLayout" name="formLayout">
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_current_I1">
+         <property name="text">
+          <string>Ток ДХ (I1, мА):</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="input_current_I1"/>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_current_I2">
+         <property name="text">
+          <string>Ток ЭМ (I2, мА):</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="input_current_I2"/>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QPushButton" name="start_button">
+       <property name="text">
+        <string>Начать эксперимент</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QLabel" name="result_label">
+     <property name="text">
+      <string>Результаты эксперимента будут отображены здесь</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="constants_label">
+     <property name="text">
+      <string>Постоянные значения установки:
+                                    Коэффициент усиления операционного усилителя k = 100
+                                    Начальная индукция магнитного поля сердечника B_n = 0.1 Тл
+                                    Коэффициент пропорциональности a = 0.5
+                                </string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
