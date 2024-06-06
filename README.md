@@ -1,1 +1,1 @@
-# phisics_labs
+# physics_labs
