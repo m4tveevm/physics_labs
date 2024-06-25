@@ -29,7 +29,7 @@ PyQtWebEngine-Qt5==5.15.13
 python-dateutil==2.9.0.post0
 PythonQwt==0.12.1
 QtPy==2.4.1
-requests==2.31.0
+requests==2.32.2
 scipy==1.13.0
 six==1.16.0
 soupsieve==2.5
